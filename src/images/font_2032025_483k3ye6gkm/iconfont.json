@@ -6,6 +6,76 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "726885",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "6466801",
+      "name": "对号",
+      "font_class": "duihao",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "5412236",
+      "name": "向下",
+      "font_class": "down",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "9592074",
+      "name": "小米",
+      "font_class": "xiaomi",
+      "unicode": "ecbf",
+      "unicode_decimal": 60607
+    },
+    {
+      "icon_id": "16995",
+      "name": "mi logo",
+      "font_class": "milogo",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "3953183",
+      "name": "米家",
+      "font_class": "mijia_huaban",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "356490",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "405727",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "1002153",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "14055582",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
       "icon_id": "2053181",
       "name": "短信",
       "font_class": "duanxin",
