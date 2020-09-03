@@ -1,4 +1,4 @@
-import $ from './jquery.js';
+import $ from '../library/jquery.js';
 
 
 var rotateLeft = function(lValue, iShiftBits) {

@@ -241,6 +241,7 @@ nav .center > .shoppingCart > .cartShow {
   position: sticky;
   top: 0px;
   background-color: white;
+  z-index: 999;
 }
 #sticky > .sticky-C {
   width: 1226px;
@@ -273,13 +274,55 @@ nav .center > .shoppingCart > .cartShow {
   width: 1226px;
   margin: 0 auto;
   overflow: hidden;
+  z-index: 1;
 }
 #details > .content-C > .img-left {
   width: 606px;
   float: left;
 }
-#details > .content-C > .img-left > img {
+#details > .content-C > .img-left .slider {
+  overflow: hidden;
   width: 580px;
+  height: 580px;
+  position: relative;
+}
+#details > .content-C > .img-left .slider > div {
+  position: absolute;
+  width: 8000px;
+}
+#details > .content-C > .img-left .slider > div > img {
+  width: 580px;
+  float: left;
+}
+#details > .content-C > .img-left .slider > span {
+  position: absolute;
+  top: 45%;
+  font-size: 3em;
+  cursor: pointer;
+  user-select: none;
+}
+#details > .content-C > .img-left .slider > span:last-of-type {
+  right: 0;
+}
+#details > .content-C > .img-left .slider .active {
+  background-color: red;
+}
+#details > .content-C > .img-left .slider article {
+  position: absolute;
+  text-align: center;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  border: 1px solid #bbb;
+  border-radius: 30px;
+}
+#details > .content-C > .img-left .slider article > p {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: palevioletred;
+  float: left;
 }
 #details > .content-C > .text-right {
   float: left;
@@ -289,7 +332,7 @@ nav .center > .shoppingCart > .cartShow {
 #details > .content-C > .text-right > .title {
   font-size: 24px;
 }
-#details > .content-C > .text-right > .details {
+#details > .content-C > .text-right > .sale-desc {
   padding: 8px 0;
   font-size: 14px;
   line-height: 20px;
@@ -341,7 +384,11 @@ nav .center > .shoppingCart > .cartShow {
   width: 600px;
   overflow: hidden;
 }
-#details > .content-C > .text-right > .by-option > ul > a {
+#details > .content-C > .text-right > .by-option > ul > li:first-of-type {
+  border: solid 1px #ff6700;
+  color: #ff6700;
+}
+#details > .content-C > .text-right > .by-option > ul > li {
   color: #757575;
   float: left;
   display: inline-block;
@@ -352,8 +399,9 @@ nav .center > .shoppingCart > .cartShow {
   text-align: center;
   line-height: 42px;
   margin-top: 10px;
+  cursor: pointer;
 }
-#details > .content-C > .text-right > .by-option > ul > a:nth-last-of-type(2n+1) {
+#details > .content-C > .text-right > .by-option > ul > li:nth-of-type(2n+1) {
   margin-right: 14px;
 }
 #details > .content-C > .text-right > .server-box {
@@ -451,6 +499,9 @@ nav .center > .shoppingCart > .cartShow {
 #details > .content-C > .text-right > .select-list > p {
   font-size: 14px;
 }
+#details > .content-C > .text-right > .select-list > p > span {
+  margin-left: 200px;
+}
 #details > .content-C > .text-right > .select-list > .sum {
   font-size: 24px;
   color: #ff6700;
@@ -470,6 +521,11 @@ nav .center > .shoppingCart > .cartShow {
   line-height: 54px;
   float: left;
   margin-right: 10px;
+}
+#details > .content-C > .text-right > .btn-box > .btn-shop > a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
 }
 #details > .content-C > .text-right > .btn-box > .like {
   width: 142px;

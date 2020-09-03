@@ -317,51 +317,75 @@ nav{
             position: relative;
             margin-bottom: 20px;
 
-            &>span{
-                position: absolute;
-                top:45%;
-                font-size:3em;
-                cursor: pointer;
-                user-select: none;
-            }
-        
-            &>span:last-of-type{
-                right:0;
-            }
-        
-            &>article{
-                // padding: 5px;
-                position: absolute;
-                background-color: #ccc;
-                top: 90%;
-                left: 50%;
-                transform: translateX(-50%);
-                border-radius: 20px;
-                &:hover{
-                    cursor: pointer;
+            .slider{
+                overflow: hidden;
+                width: 1226px; 
+                height: 460px;
+                // margin:200px auto;
+                position: relative;
+            
+                &>div{
+                    position: absolute;
+                    width:8000px;
+            
+                    &>img{
+                        // float 会将所有元素变块级元素
+                        float: left;
+                    }
                 }
-                &>p{
-                    float: left;
-                    width: 15px;
-                    height: 15px;
-                    border-radius: 50%;
-                    background-color: rgba(165, 42, 42, 0.363);
-                    margin: 10px;
+            
+                &>span:first-of-type{
+                    position: absolute;
+                    top:45%;
+                    left: 236px;
+                    font-size:3em;
+                    cursor: pointer;
+                    user-select: none;
+                    color: #bbb;
+                }
+            
+                &>span:last-of-type{
+                    position: absolute;
+                    top:45%;
+                    color: #bbb;
+                    font-size:3em;
+                    cursor: pointer;
+                    user-select: none;
+                    right:0;
                 }
                 .active{
-                    background-color: rgb(165, 42, 42);
+                    background-color: red;
                 }
+                article{
+                    position: absolute;
+                    text-align: center;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translate(-50%);
+                    // padding: 10px;
+                    border: 1px solid #bbb;
+                    border-radius: 30px;
+                    >p{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%; 
+                    margin:5px;
+                    background-color: palevioletred; 
+                    float: left;    
+                  }
+                }
+            
+                
             }
-
-            >img{
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-            }
-            >.show{
-                opacity: 1;
-            }
+            // >img{
+            //     position: absolute;
+            //     top: 0;
+            //     left: 0;
+            //     opacity: 0;
+            // }
+            // >.show{
+            //     opacity: 1;
+            // }
 
             >.leftNav{
                 list-style: none;
@@ -369,8 +393,10 @@ nav{
                 height: 460px;
                 background-color: rgba(128, 128, 128, 0.479);
                 position: absolute;
+                top: 3px;
+                left: 0;
                 padding: 20px 0;
-                position: relative;
+                // position: relative;
 
                 >li{
                     line-height: 42px;
@@ -498,7 +524,7 @@ nav{
                 line-height: 58px;
                 font-size: 22px;
             }
-            >ul{
+            >.tab{
                 position: absolute;
                 right: 0;
                 top: 50%;
@@ -508,7 +534,10 @@ nav{
                     margin-left: 14px;
                     font-size: 16px;
                     line-height: 28px;
-                    border-bottom: 1px solid #000;
+                }
+                >.tab-active{
+                    color: #ff6700;
+                    border-bottom: 1px solid #ff6700;
                 }
             }
         }
@@ -520,6 +549,7 @@ nav{
             font-size: 14px;
             margin-bottom: 5px;
             line-height: 21px;
+            color: #000;
         }
         p.desc{
             font-size: 12px;
@@ -587,13 +617,18 @@ nav{
             position: relative;
             padding: 14px;
             text-align: center;
+            >a{
+                text-decoration: none;
+                color: #000;
+            }
 
             &:hover{
                 top: -2px;
                 box-shadow: 0 8px 16px rgba(0,0,0,.18);
             }
             
-            >div{
+           
+            div{
                 width: 200px;
                 height: 200px;
                 // background-color: #ff6b00;
@@ -610,6 +645,7 @@ nav{
                
     
             }
+           
         }
       .product-b{
           padding: 30px 18px 30px 30px;
@@ -750,11 +786,10 @@ nav{
     position: relative;
     
     >.title{
-        
+        color: #333333;
         height: 58px;
         font-size: 22px;
-        line-height: 58px;
-       
+        line-height: 58px;      
     }
 
     >.look{

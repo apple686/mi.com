@@ -266,46 +266,56 @@ nav .center > .shoppingCart > .cartShow {
   position: relative;
   margin-bottom: 20px;
 }
-#content > .container > .banner > span {
+#content > .container > .banner .slider {
+  overflow: hidden;
+  width: 1226px;
+  height: 460px;
+  position: relative;
+}
+#content > .container > .banner .slider > div {
+  position: absolute;
+  width: 8000px;
+}
+#content > .container > .banner .slider > div > img {
+  float: left;
+}
+#content > .container > .banner .slider > span:first-of-type {
   position: absolute;
   top: 45%;
+  left: 236px;
   font-size: 3em;
   cursor: pointer;
   user-select: none;
+  color: #bbb;
 }
-#content > .container > .banner > span:last-of-type {
+#content > .container > .banner .slider > span:last-of-type {
+  position: absolute;
+  top: 45%;
+  color: #bbb;
+  font-size: 3em;
+  cursor: pointer;
+  user-select: none;
   right: 0;
 }
-#content > .container > .banner > article {
+#content > .container > .banner .slider .active {
+  background-color: red;
+}
+#content > .container > .banner .slider article {
   position: absolute;
-  background-color: #ccc;
-  top: 90%;
+  text-align: center;
+  bottom: 10px;
   left: 50%;
-  transform: translateX(-50%);
-  border-radius: 20px;
+  transform: translate(-50%);
+  border: 1px solid #bbb;
+  border-radius: 30px;
 }
-#content > .container > .banner > article:hover {
-  cursor: pointer;
-}
-#content > .container > .banner > article > p {
-  float: left;
-  width: 15px;
-  height: 15px;
+#content > .container > .banner .slider article > p {
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: rgba(165, 42, 42, 0.363);
-  margin: 10px;
-}
-#content > .container > .banner > article .active {
-  background-color: #a52a2a;
-}
-#content > .container > .banner > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-#content > .container > .banner > .show {
-  opacity: 1;
+  margin: 5px;
+  background-color: palevioletred;
+  float: left;
 }
 #content > .container > .banner > .leftNav {
   list-style: none;
@@ -313,8 +323,9 @@ nav .center > .shoppingCart > .cartShow {
   height: 460px;
   background-color: rgba(128, 128, 128, 0.479);
   position: absolute;
+  top: 3px;
+  left: 0;
   padding: 20px 0;
-  position: relative;
 }
 #content > .container > .banner > .leftNav > li {
   line-height: 42px;
@@ -423,23 +434,27 @@ nav .center > .shoppingCart > .cartShow {
   line-height: 58px;
   font-size: 22px;
 }
-#product .proPart > .head > ul {
+#product .proPart > .head > .tab {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translate(0, -50%);
 }
-#product .proPart > .head > ul > li {
+#product .proPart > .head > .tab > li {
   float: left;
   margin-left: 14px;
   font-size: 16px;
   line-height: 28px;
-  border-bottom: 1px solid #000;
+}
+#product .proPart > .head > .tab > .tab-active {
+  color: #ff6700;
+  border-bottom: 1px solid #ff6700;
 }
 #product .pic p.title {
   font-size: 14px;
   margin-bottom: 5px;
   line-height: 21px;
+  color: #000;
 }
 #product .pic p.desc {
   font-size: 12px;
@@ -503,18 +518,22 @@ nav .center > .shoppingCart > .cartShow {
   padding: 14px;
   text-align: center;
 }
+#product .pic .product-a > a {
+  text-decoration: none;
+  color: #000;
+}
 #product .pic .product-a:hover {
   top: -2px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
 }
-#product .pic .product-a > div {
+#product .pic .product-a div {
   width: 200px;
   height: 200px;
   position: relative;
   top: 0;
   left: 0;
 }
-#product .pic .product-a > div > img {
+#product .pic .product-a div > img {
   width: 160px;
   position: absolute;
   top: 50%;
@@ -646,6 +665,7 @@ nav .center > .shoppingCart > .cartShow {
   position: relative;
 }
 #product > .phone > .title {
+  color: #333333;
   height: 58px;
   font-size: 22px;
   line-height: 58px;

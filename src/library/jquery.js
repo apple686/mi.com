@@ -10867,4 +10867,6 @@
     return jQuery;
 });
 
+
+// 将jQuery导出
 export default $;
